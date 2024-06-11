@@ -7,8 +7,7 @@ func _process(delta):
 	if Input.is_action_pressed("Shift")and Input.is_action_pressed("W"):
 		SPEED = 3
 		PBar.value -= 1
-		
 	else:
 		SPEED = 2
-		PBar.value += 0.1
+		PBar.value += 1
 		
