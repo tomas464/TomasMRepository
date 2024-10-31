@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6b6b6b;
+}
+
+.vizitka {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid #ffffff;
+    background-color: #73b2e2;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.vizitka:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.vizitka:hover .back {
+    transform: rotateY(0deg);
+}
