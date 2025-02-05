@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10; 
+    box-shadow: 0 0 100px 20px rgba(255, 255, 0, 0.8); 
+}
+
+.pulse {
+
+    border-radius: 50%;
+    width: 85px;
+    height: 80px;
+    background-color: rgb(255, 255, 0);
+    animation: moon-orbit 4s linear infinite; 
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: orbit 20s linear infinite;
+}
+
+.orbit1 {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    animation-duration: 15s; 
+}
+
+
+.orbit2 {
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    animation-duration: 25s;
+}
+
+
+.orbit3 {
+    width: 700px;
+    height: 700px;
+    margin-top: -350px;
+    margin-left: -350px;
+    animation-duration: 35s; 
+}
+
+
+.orbit4 {
+    width: 900px;
+    height: 900px;
+    margin-top: -450px;
+    margin-left: -450px;
+    animation-duration: 45s; 
+}
+
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0; 
+    z-index: 5; 
+    background: radial-gradient(circle, #ffffff 40%, #000000 80%);
+
+}
+
+.planet1 {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #6c9bd1 40%, #2c5672 80%);
+}
+
+.planet2 {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #a37661 40%, #5f3e2f 80%);
+}
+
+.planet3 {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #bbab76 40%, #5e522e 80%);
+}
+
+.planet4 {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #df9e76 40%, #5e4432 80%);
+}
+
+.moon-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: moon-orbit 4s linear infinite; 
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.moon {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #D8D8D8 40%, #585858 80%);
+    border-radius: 50%;
+}
+
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moon-orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
