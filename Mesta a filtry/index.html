@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukázka filtrování a formuláře</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="#sekce-tabulka">Tabulka</a>
+        <a href="#sekce-formular">Formulář</a>
+    </nav>
+    <section id="sekce-tabulka">
+        <h2>Tabulka měst</h2>
+        <div class="search">
+            <input type="search" id="search bar" placeholder="Search city...">
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+                <tr><td>1</td><td>Praha</td><td>1,324,277</td></tr>
+                <tr><td>2</td><td>Brno</td><td>379,527</td></tr>
+                <tr><td>3</td><td>Ostrava</td><td>289,128</td></tr>
+                <tr><td>4</td><td>Plzeň</td><td>173,165</td></tr>
+                <tr><td>5</td><td>Liberec</td><td>103,979</td></tr>
+                <tr><td>6</td><td>Olomouc</td><td>99,483</td></tr>
+            </table>
+        </div>
+    </section>
+    <section id="sekce-formular">
+        <h2>Formulář pro výběr města</h2>
+        <form>
+            <div class="search">
+                <input type="text" id="filter-select" placeholder="Filtrovat města...">
+            </div>
+            <div class="search">
+                <select id="city-select" size="6">
+                    <option value="Praha">Praha</option>
+                    <option value="Brno">Brno</option>
+                    <option value="Ostrava">Ostrava</option>
+                    <option value="Plzeň">Plzeň</option>
+                    <option value="Liberec">Liberec</option>
+                    <option value="Olomouc">Olomouc</option>
+                </select>
+            </div>
+            <div class="search">
+                <button type="submit">Odeslat</button>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
