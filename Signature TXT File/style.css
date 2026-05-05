@@ -1,0 +1,88 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef1f5;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="file"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 260px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: Consolas, monospace;
+    resize: vertical;
+    background: #fafafa;
+}
+
+button {
+    background: #0066ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+    background: #0053d6;
+}
+
+button:disabled {
+    background: #9bb7f0;
+    cursor: default;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 350px;
+}
+
+.status {
+    margin-top: 8px;
+    color: #555;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #0066ff;
+}
