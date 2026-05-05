@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Podpis TXT souboru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Podpis TXT souboru</h1>
+
+<div class="card">
+    <label for="fileInput">Vyber TXT soubor:</label>
+    <input type="file" id="fileInput" accept=".txt">
+    <div class="status" id="fileStatus">Žádný soubor není nahrán.</div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <label>Obsah souboru</label>
+            <textarea id="fileContent" readonly></textarea>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <label>Certifikační klíč</label>
+            <select id="certKey">
+                <option value="">-- Vyber podpis --</option>
+
+                <option value="00112233445566778899AABBCCDDEEFF">
+                    Mgr. Tomáš Maršál
+                </option>
+
+                <option value="AABBCCDDEEFF00112233445566778899">
+                    Ing. Šimon Novák
+                </option>
+
+                <option value="11223344556677889900AABBCCDDEEFF">
+                    Bc. Tadyáš Špalek 
+                </option>
+
+                <option value="FFEEDDCCBBAA00998877665544332211">
+                    Tomáš Fuk
+                </option>
+            </select>
+
+            <button id="signAndDownloadBtn" disabled>Podepsat a stáhnout</button>
+
+            <div class="status" id="signStatus"></div>
+
+            <label>Podepsaný obsah</label>
+            <textarea id="signedContent" readonly></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
